@@ -151,6 +151,7 @@ body {
     font-size: 40px;
   }
   .attribution {
+    color: var(--Dark_Slate_Grey);
     visibility: hidden;
   }
 }
