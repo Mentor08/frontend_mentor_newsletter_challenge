@@ -151,7 +151,7 @@ body {
     font-size: 40px;
   }
   .attribution {
-    color: var(--Charcoal_Grey);
+    display: none !important;
   }
 }
 
