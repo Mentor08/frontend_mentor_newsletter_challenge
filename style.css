@@ -1,0 +1,196 @@
+:root {
+  --primary_color: hsl(4, 100%, 67%);
+  --Dark_Slate_Grey: hsl(234, 29%, 20%);
+  --Charcoal_Grey: hsl(235, 18%, 26%);
+  --Grey: hsl(231, 7%, 60%);
+  --White: hsl(0, 0%, 100%);
+}
+@font-face {
+  font-family: "Roboto-bold";
+  src: url("/frontend_mentor_newsletter_challenge/fonts/Roboto-Bold.ttf"),
+    format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("/frontend_mentor_newsletter_challenge/fonts/Roboto-Regular.ttf"),
+    format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Roboto-Regular;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Dark_Slate_Grey);
+}
+.container .row {
+  display: flex;
+  max-width: 1440px;
+  margin: auto;
+  border-radius: 15px;
+  padding: 1rem;
+  gap: 1rem;
+  background-color: var(--White);
+}
+.container .row .col_2 {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+}
+.container .row .col_2:first-child {
+  padding: 4rem 2%;
+  justify-content: center;
+  align-items: center;
+}
+.container .row .col_2 h1 {
+  font-family: Roboto-bold;
+  font-size: 55px;
+  margin-block: 1.5rem;
+  display: block;
+  width: 100%;
+  letter-spacing: 1px;
+}
+.container .row .col_2 .join {
+  font-size: 16px;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+.container .row .col_2 .list {
+  width: 100%;
+  font-size: 16px;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.container .form {
+  margin-top: 40px;
+  width: 100%;
+}
+.container .form .form_group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.container .form .form_group .label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.container .form .form_group .label p {
+  color: var(--primary_color);
+  visibility: hidden;
+}
+.container .form .form_group input {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid var(--Grey);
+  font-size: 16px;
+}
+.container .form .form_group input:focus,
+.container .form .form_group input:valid {
+  border: 1px solid var(--Grey);
+  outline: none;
+}
+.container .form button {
+  width: 100%;
+  font-size: 16px;
+  margin-top: 1.5rem;
+  padding: 13px 15px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: var(--Charcoal_Grey);
+  color: var(--White);
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+.container .form button:hover {
+  background-color: var(--primary_color);
+}
+@media (max-width: 375px) {
+  .row {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+  }
+  .container.row.col_2:first-child {
+    text-align: center;
+  }
+  .container .row .col_2 h1 {
+    font-size: 40px;
+  }
+}
+
+.container .content {
+  width: 375px;
+  max-width: 350px;
+  background-color: var(--White);
+  padding: 2rem 2%;
+  border-radius: 20px;
+}
+.container .content h1 {
+  margin-block: 1rem;
+  display: block;
+  width: 100%;
+  font-family: Roboto-bold;
+  font-weight: bold;
+  font-size: 40px;
+}
+.container .content p {
+  font-size: 12px;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.container .content button {
+  width: 100%;
+  font-size: 16px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: var(--Charcoal_Grey);
+  color: var(--White);
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+.container .content button:hover {
+  background-color: var(--primary_color);
+}
+@media (max-width: 375px) {
+  .container .content {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.5rem;
+    position: relative;
+    border-radius: 0%;
+  }
+  .container .content button {
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    padding: 15px;
+  }
+}
