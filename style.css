@@ -151,7 +151,9 @@ body {
     font-size: 40px;
   }
   .attribution {
-    display: none !important;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
   }
 }
 
