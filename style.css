@@ -34,6 +34,17 @@ body {
   justify-content: center;
   align-items: center;
   background-color: var(--Dark_Slate_Grey);
+  position: relative;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  color: var(--White);
+  bottom: 5px;
+}
+.attribution a {
+  color: var(--primary_color);
 }
 .container .row {
   display: flex;
@@ -124,19 +135,29 @@ body {
 .container .form button:hover {
   background-color: var(--primary_color);
 }
-@media (max-width: 375px) {
-  .row {
+@media (max-width: 450px) {
+  .container .row {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    width: 100vw;
+    border-radius: 0%;
+  }
+  .container .row .col_2 {
     width: 100%;
   }
-  .container.row.col_2:first-child {
-    text-align: center;
+  .container .row .col_2:first-child {
+    padding: 0;
   }
   .container .row .col_2 h1 {
     font-size: 40px;
+  }
+  .attribution {
+    position: fixed;
+    left: 15%;
+    bottom: 10px;
+    color: var(--Dark_Slate_Grey);
   }
 }
 
