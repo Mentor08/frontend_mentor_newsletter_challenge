@@ -138,8 +138,6 @@ body {
 @media (max-width: 450px) {
   .container .row {
     flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
     width: 100vw;
     border-radius: 0%;
@@ -147,17 +145,11 @@ body {
   .container .row .col_2 {
     width: 100%;
   }
-  .container .row .col_2:first-child {
-    padding: 0;
-  }
   .container .row .col_2 h1 {
     font-size: 40px;
   }
   .attribution {
-    position: fixed;
-    left: 15%;
-    bottom: 10px;
-    color: var(--Dark_Slate_Grey);
+    color: var(--Charcoal_Grey);
   }
 }
 
